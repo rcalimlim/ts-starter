@@ -3,8 +3,12 @@
   "packageManager": "yarn@4.1.0",
   "type": "module",
   "scripts": {
+    "build": "tsc -p .",
+    "cli": "tsx src/index.ts",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint --fix --ext .ts",
+    "prettier": "prettier -c **/*.ts",
+    "prettier:fix": "prettier -w **/*.ts",
     "test": "jest"
   },
   "devDependencies": {
@@ -16,7 +20,11 @@
     "jest": "^29.7.0",
     "prettier": "3.2.4",
     "ts-jest": "^29.1.2",
-    "ts-node": "^10.9.2",
+    "tsx": "^4.7.0",
     "typescript": "^5.3.3"
+  },
+  "volta": {
+    "node": "18.19.0",
+    "yarn": "4.1.0"
   }
 }
