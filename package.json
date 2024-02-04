@@ -3,6 +3,8 @@
   "packageManager": "yarn@4.1.0",
   "type": "module",
   "scripts": {
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint --fix --ext .ts",
     "test": "jest"
   },
   "devDependencies": {
